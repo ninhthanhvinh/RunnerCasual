@@ -7,14 +7,17 @@ public class LevelInitiation : MonoBehaviour
     public GameObject[] obstacles;
     public GameObject[] collectibleObjs;
 
+    public int maxObstacles = 4;
+    public int maxCollectibles = 4;
+
     private int obstacleCount;
     private int collectibleCount;
 
     // Start is called before the first frame update
     void Awake()
     {
-        obstacleCount = Random.Range(1, 4);
-        collectibleCount = Random.Range(1, 4);
+        obstacleCount = Random.Range(1, maxObstacles);
+        collectibleCount = Random.Range(1, maxCollectibles);
     }
 
     private void Start()

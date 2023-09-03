@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
     [Tooltip("What layers the character uses as ground")]
     public LayerMask GroundLayers;
 
+    public GameObject[] collectVFXs;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -100,6 +101,11 @@ public class Player : MonoBehaviour
     public void AddReward(int reward)
     {
         audioManager.PlaySound("CollectCoin");
+        if (reward > 30)
+        {
+            int randomVFX = Random.Range(0, collectVFXs.Length);
+            collectVFXs[randomVFX].GetComponent<ParticleSystem>().Play();
+        }
         gameManager.points += reward;
         gameManager.OnPointChange.Invoke(gameManager.points);
     }

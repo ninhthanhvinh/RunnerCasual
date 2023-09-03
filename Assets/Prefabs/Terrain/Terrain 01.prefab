@@ -175,6 +175,10 @@ MonoBehaviour:
   - {fileID: 6444296596190010453, guid: b647a73bf7eadac4e8b7340c46167c96, type: 3}
   - {fileID: 7764106529149816830, guid: 16b5dccd8acf0574ab6f3a4a7accf052, type: 3}
   - {fileID: 5188892258904857737, guid: 00cd591cbdc0ed44cac0befbe0cc0d4b, type: 3}
+  - {fileID: 8403891975268327695, guid: 510f2ce8f1bafbc40afc96a23f444f49, type: 3}
+  - {fileID: 42908697907236203, guid: ed8af4f357353ad44bb9e2baa167b9a0, type: 3}
+  maxObstacles: 4
+  maxCollectibles: 4
 --- !u!1 &8057981643422857847
 GameObject:
   m_ObjectHideFlags: 0
